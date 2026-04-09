@@ -5,20 +5,20 @@
 class Sshsign < Formula
   desc "SSH signing service CLI for AI agents"
   homepage "https://sshsign.dev"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agenticpoa/sshsign/releases/download/v0.1.0/sshsign_darwin_amd64.tar.gz"
-      sha256 "145e1aae9b9df1b4f8ca06fe4c55fee7f6b06fc26448824d115bfb4278612909"
+      url "https://github.com/agenticpoa/sshsign/releases/download/v0.2.0/sshsign_darwin_amd64.tar.gz"
+      sha256 "2035d0406a4fa933685aba92fc1e04ac33ef14e213a9a071040bee06acf8165b"
 
       define_method(:install) do
         bin.install "sshsign"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agenticpoa/sshsign/releases/download/v0.1.0/sshsign_darwin_arm64.tar.gz"
-      sha256 "451ae4241fb5d057c117bbfc9fb69216032655c3c13ad25cb7f2abce0c05bc0d"
+      url "https://github.com/agenticpoa/sshsign/releases/download/v0.2.0/sshsign_darwin_arm64.tar.gz"
+      sha256 "1439a464354081e0e56b246200c0d0efeb0f95c2a50af5bb6e7043dd9fe705fd"
 
       define_method(:install) do
         bin.install "sshsign"
@@ -28,15 +28,15 @@ class Sshsign < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agenticpoa/sshsign/releases/download/v0.1.0/sshsign_linux_amd64.tar.gz"
-      sha256 "ff7dd22163f39d044a8c65fde25d73cafaf230b8c0efc04343ecfa42d7e1f692"
+      url "https://github.com/agenticpoa/sshsign/releases/download/v0.2.0/sshsign_linux_amd64.tar.gz"
+      sha256 "5f42362dcb5474fca59f56861c256d82e6c3f23f4096df66eb4d205355d0fbed"
       define_method(:install) do
         bin.install "sshsign"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agenticpoa/sshsign/releases/download/v0.1.0/sshsign_linux_arm64.tar.gz"
-      sha256 "32bcd86ba2b5dd0ae44ab9f44c0fcf1642c19daa142825861c2451218fa5dcaa"
+      url "https://github.com/agenticpoa/sshsign/releases/download/v0.2.0/sshsign_linux_arm64.tar.gz"
+      sha256 "b7fdfe3b99de0166f9c8bf98b86872e658748fdf26e5e13a53cd522e90911929"
       define_method(:install) do
         bin.install "sshsign"
       end
