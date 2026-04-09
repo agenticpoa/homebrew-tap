@@ -31,3 +31,7 @@ For the full setup guide and programmatic API, see [sshsign.dev](https://sshsign
 ```bash
 brew upgrade agenticpoa/tap/sshsign
 ```
+
+## License
+
+MIT
